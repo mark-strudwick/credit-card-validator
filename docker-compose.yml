@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  db:
+    image: 'postgres'
+    environment:
+      POSTGRES_USER: 'creditcard'
+      POSTGRES_PASSWORD: 'CwEMpJ4AAd'
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:

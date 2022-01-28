@@ -1,0 +1,1 @@
+export const welcomeMessage: string = 'Credit Card Validator API'
