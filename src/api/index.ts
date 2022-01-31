@@ -5,7 +5,7 @@ import card from './card/card-routes'
 
 const router = express.Router()
 
-router.get('/', (req, res) => {
+router.get('/', (req: express.Request, res: express.Response) => {
   res.json({
     message: welcomeMessage
   })

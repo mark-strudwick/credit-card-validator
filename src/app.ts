@@ -11,7 +11,7 @@ const app = express()
 app.use(morgan('dev'))
 app.use(helmet())
 
-app.get('/', (req, res) => {
+app.get('/', (req: express.Request, res: express.Response) => {
   res.json({
     welcomeMessage,
   })

@@ -2,7 +2,7 @@ import express from 'express'
 
 const router = express.Router()
 
-router.get('/', async (req, res, next) => {
+router.post('/', async (req: express.Request, res: express.Response, next: express.NextFunction) => {
   try {
     
   } catch (error) {
