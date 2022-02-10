@@ -10,6 +10,7 @@ const app = express()
 
 app.use(morgan('dev'))
 app.use(helmet())
+app.use(express.json())
 
 app.get('/', (req: express.Request, res: express.Response) => {
   res.json({

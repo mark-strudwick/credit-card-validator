@@ -10,7 +10,7 @@ const formatCardNumberLength = (cardNumber: string) => {
   return formattedCardNumber
 }
 
-const validateCardNumber = (cardNumber: string) => {
+const validateCardNumber = (cardNumber: string): boolean => {
   const formattedCardNumber = formatCardNumberLength(cardNumber)
   if (!formattedCardNumber) {
     return false
